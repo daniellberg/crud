@@ -22,7 +22,15 @@ function listarItens(){
         const elemento = document.createElement("li")
         elemento.className = "list-group-item list-group-item-info text-center m-1"
         elemento.textContent = item.nome
+        
+        // creates delete button
+        const button = document.createElement("button")
+        button.innerHTML = "A"
+        button.className = "btn btn-danger btn-sm rounded-0"
+        
+        //appends
         armazenaItens.appendChild(elemento)
+        elemento.appendChild(button)
     }
 }
 
@@ -32,7 +40,15 @@ function criarItem(){
         const elemento = document.createElement("li")
         elemento.className = "list-group-item list-group-item-info text-center m-1"
         elemento.textContent = item.value
+        
+        //creates button
+        const button = document.createElement("button")
+        button.innerHTML = "A"
+        button.className = "btn btn-danger btn-sm rounded-0"
+        
+        //appends
         armazenaItens.appendChild(elemento)
+        elemento.appendChild(button)
 }
 
 listarItens()
