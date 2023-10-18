@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista com Bootstrap</title>
+  <!-- Adicione o link para o arquivo Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <!-- Formulário para adicionar novos itens -->
+        <div class="mb-3">
+          <label for="nomeItem" class="form-label">Nome do Item:</label>
+          <input type="text" class="form-control" id="nomeItem">
+        </div>
+        <button class="btn btn-primary" onclick="criarItem()">Criar</button>
+      
+        <hr>
+      
+        <ul id="listaItens" class="list-group"></ul>
+      </div>
+
+<!-- Adicione o link para o arquivo Bootstrap JS (opcional, apenas se você precisar de funcionalidades JS) -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
